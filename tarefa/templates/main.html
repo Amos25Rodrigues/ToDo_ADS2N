@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <Style>
+        body{
+            background-color: white;
+            font-family: 'Nunito', sans-serif;
+            padding-top: 50px;
+        }
+
+        h1{
+            display: flex;
+            align-items: center;
+            font-family: 'Raleway', sans-serif;
+            max-width: 550px;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 1px 1px 13px -1px rgba(0, 0, 0, 0.41);
+            background: linear-gradient(90deg, #8aa4f3 0%, #6e94ed 43%, #5c7fe8 100%);
+        }
+
+        .nova{
+            color: white;
+            margin-right: 10px;
+            font-size: 32px;
+        }
+
+        .nova:hover {
+            color: #666; /* Define uma cor diferente no hover, se desejado */
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .right {
+            margin-left: auto;
+            margin-right: 25px;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(90deg, #8aa4f3 0%, #6e94ed 43%, #5c7fe8 100%);
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease ;
+            text-align: center;
+            color: white;
+          }
+
+          .btn-gradient:hover {
+            background: linear-gradient(90deg, #6e94ed 0%, #5c7fe8 43%, #3452ac 100%);
+          }
+
+          .btn {
+            color:#5c7fe8;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 5px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          .icon {
+            position: relative;
+            top: -2px;
+            font-size: 25px;
+            color:#5c7fe8
+          }
+
+          .icon:hover {
+            color: #666; /* Define uma cor diferente no hover, se desejado */
+          }
+
+          .iconDeletar {
+            font-size: 40px;
+            color:#5c7fe8
+          }
+
+          .iconDeletar:hover {
+            color: #666; /* Define uma cor diferente no hover, se desejado */
+          }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            max-width: 550px;
+            margin: auto;
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.41);
+        }
+
+        .buttons-container {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        .deletar{
+            padding-bottom: 10px;
+        }
+
+        .atualizar{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            font-size: 15px;
+            align-items: center;
+        }
+
+    </Style>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

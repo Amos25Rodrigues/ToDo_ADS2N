@@ -1,0 +1,20 @@
+{% extends 'C:\Users\darkn\Desktop\ToDo_ADS2N\tarefa\templates\main.html' %}
+{% block content %}
+<h1>Lista de tarefas <a class="nova" href="{% url 'nova' %}">&#43;</a></h1>
+<div class="container"> 
+    <ul>
+        {% if tarefas %}
+        {% for tarefa in tarefas %}
+            <li>
+                • {{ tarefa.nome_tarefa }}
+                <span class="right"><a class="icon" href="{% url 'atualizar' tarefa.pk %}">&#9998;</a></span>
+                <span><a class="iconDeletar" href="{% url 'deletar' tarefa.pk %}">&#215;</a></span>
+            </li>
+        {% endfor %}
+        {% else %}
+            <p>Nenhum tarefa encontrada.</p>        
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}
+</html>

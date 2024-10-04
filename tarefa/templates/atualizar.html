@@ -1,0 +1,18 @@
+{% extends 'C:\Users\darkn\Desktop\ToDo_ADS2N\tarefa\templates\main.html' %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+  <h1>Editar Tarefa</h1>
+    <div class="container">
+      {% csrf_token %}
+      <div class="atualizar">
+        {{ form.as_p }}
+
+        <div class="buttons-container">
+          <input type="submit" class="btn-gradient" value="Salvar Alterações" >
+          <a href="{% url 'lista' %}" class="btn btn-secondary">Cancelar</a>
+        <div>
+      </div>
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'C:\Users\darkn\Desktop\ToDo_ADS2N\tarefa\templates\main.html' %}
+{% block content %}
+    <div>
+        <h1>Deletar Tarefa</h1>
+        <div class="container deletar">
+            <p>Tem certeza que deseja deletar a tarefa <strong>{{ object.nome_tarefa }}?</p>
+            <form method="post">
+                {% csrf_token %}
+                <div>
+                    <button type="submit" class="btn-gradient">Deletar tarefa</button>
+                    <a href="{% url 'lista' %}" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

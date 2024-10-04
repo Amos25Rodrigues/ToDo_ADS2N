@@ -1,0 +1,16 @@
+{% extends 'C:\Users\darkn\Desktop\ToDo_ADS2N\tarefa\templates\main.html' %}
+{% block content %}
+<h1>Criar uma nova tarefa</h1>
+    <div class="container">
+        <form class="atualizar" action="" method="post">
+        {% csrf_token %}
+
+            {{ form.as_p }}
+            
+            <div class="buttons-container">
+                <input class="btn-gradient" type="submit"  value="Cadastrar" placeholder="Digite a tarefa">
+                <a href="{% url 'lista' %}" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </table>
+    </div>
+{% endblock %}
